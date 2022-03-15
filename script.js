@@ -5,3 +5,9 @@ function wrap(value) {
     value: value 
   };
 }
+
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length*width*height;
+  }
+}
