@@ -90,3 +90,6 @@ function solution(string) {
 
 // https://www.codewars.com/kata/5898761a9c700939ee000011/train/javascript
 const cornerCircle = r => +((r*Math.sqrt(2)-r)/(1 + Math.sqrt(2))).toFixed(2)
+
+// https://www.codewars.com/kata/55f8a9c06c018a0d6e000132/train/javascript
+const validatePIN = (pin) => /^\d{4}(\d{2})?$/.test(pin);
