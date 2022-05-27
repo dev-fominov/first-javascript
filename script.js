@@ -93,3 +93,15 @@ const cornerCircle = r => +((r*Math.sqrt(2)-r)/(1 + Math.sqrt(2))).toFixed(2)
 
 // https://www.codewars.com/kata/55f8a9c06c018a0d6e000132/train/javascript
 const validatePIN = (pin) => /^\d{4}(\d{2})?$/.test(pin);
+
+// https://www.codewars.com/kata/57f24e6a18e9fad8eb000296/train/javascript
+function howMuchILoveYou(p) {
+  return (
+    (p%6 === 1 || p === 1)  && "I love you" || 
+    (p%6 === 2 || p === 2)  && "a little" || 
+    (p%6 === 3 || p === 3)  && "a lot" || 
+    (p%6 === 4 || p === 4)  && "passionately" || 
+    (p%6 === 5 || p === 5)  && "madly" || 
+    (p%6 === 6 || p%6 === 0 || p === 6)  && "not at all"
+ )
+}
